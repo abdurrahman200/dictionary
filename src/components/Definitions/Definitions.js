@@ -14,7 +14,9 @@ const Definitions = ({ meanings, word, LightTheme, category }) => {
          {/* audio---------------------------- */}
 
          {word === '' ? (
-            <Typography className='subTitle'>Start by typing a word in Search</Typography>
+            <Typography variant='h3' component='h3' className='subTitle'>
+               Start by typing a word in Search
+            </Typography>
          ) : (
             meanings.map((mean) =>
                mean.meanings.map((item) =>
